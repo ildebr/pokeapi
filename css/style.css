@@ -1,0 +1,83 @@
+*, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  background-image: url(../img/vector-electric-type-pokemon-pattern.jpg);
+  background-size: 35vw;
+}
+
+div.pokemon-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+div.pokemon-container div.pokemon {
+  padding: 0.24rem;
+  width: 47%;
+  display: inline-block;
+  flex-direction: column;
+  min-width: 145px;
+  /*max-width: 200px;*/
+  text-align: center;
+  border: yellow 0.5rem solid;
+  background-color: chartreuse;
+  margin-bottom: 0.75rem;
+}
+div.pokemon-container div.pokemon h3 {
+  text-transform: capitalize;
+}
+div.pokemon-container div.pokemon .poke-img {
+  width: 100%;
+  height: auto;
+}
+div.pokemon-container div.pokemon div.details {
+  text-align: center;
+}
+div.pokemon-container div.pokemon div.details span {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 500px) and (orientation: landscape) {
+  div.pokemon-container div.pokemon {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 850px) {
+  div.pokemon-container {
+    padding: 3rem;
+  }
+}
+@media only screen and (min-width: 900px) {
+  h1 {
+    margin-top: 2rem;
+  }
+
+  div.pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-top: 3rem;
+  }
+  div.pokemon-container div.pokemon {
+    width: 15%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
